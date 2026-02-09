@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pl" style="text-align: center; background-color: #f5c9d4">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moja Strona</title>
+    <link rel="stylesheet" href="styles.css"></link>
+</head>
+<body>
+    <h1 id="header" style="
+
+ font-family: sans-serif;
+ font-size: 30px;
+ margin-bottom: 40px;
+ color: #ff80ff
+
+
+">❤️Widzimy sie 15 (pientanstego) misiaaa❤️</h1>
+    
+
+ <div>
+
+  <img src="pan.GIF"width="250" height="250" style="
+
+outline: 20px ridge #ffccff;
+border-radius: 10px;
+margin-bottom: -260px;">
+
+
+   <p id="imgtext" style="
+
+   font-size: 80px;
+   color: pink;
+   margin-bottom: 200px;
+
+
+"> ‎ </p>
+   
+  
+  </div>
+
+<div>
+
+<button onclick = "howLong()"> Kliknij żeby sprawdzić ile dni zostało🗓️ </button>
+
+
+</div>
+    <style>
+
+	button{
+
+
+	height: 100px;
+	width: 300px;
+       border-radius: 20px;
+       font-family: sans-serif;
+	font-size: 25px;
+       color: black;
+
+
+}
+
+
+
+    </style>
+
+	<script>
+
+const imgtext = document.getElementById("imgtext");
+
+function howLong(){
+
+
+let ile = (15 - new Date().getDate())
+
+imgtext.innerText = ile;
+
+}
+      </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pl" style="text-align: center; background-color: #f5c9d4">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moja Strona</title>
+    <link rel="stylesheet" href="styles.css"></link>
+</head>
+<body>
+    <h1 id="header" style="
+
+ font-family: ‘Arial’, cursive;
+ margin-bottom: 40px;
+
+
+">Zostaniesz moją walentynką???</h1>
+    
+
+ <div>
+
+  <img src="question.GIF"width="250" id="lock" height="250" style="
+
+outline: 20px ridge #ffccff;
+border-radius: 10px;
+margin-bottom: 50px;">
+
+   
+  </div>
+
+    <div>
+
+  <button id="yes" onclick="window.location.href = 'final.html';" 
+ style="
+
+
+margin-right: 20px; 
+background-image: url(yes.PNG);
+background-size: cover;
+
+">tak</button>
+  
+<button id= "no" onclick = "no()"
+style="
+
+background-image: url(no.PNG);
+background-size: cover;
+
+">nie</button>
+
+   
+    </div>
+
+    <style>
+
+	button{
+
+
+	height: 150px;
+	width: 150px;
+       border-radius: 10px;
+       font-family: cursive;
+	font-size: 50px;
+       color: white;
+
+
+}
+
+
+
+    </style>
+
+	<script>
+
+const nobutton =
+document.getElementById("no");
+
+const yesbutton = 
+document.getElementById("yes");
+
+function no(){
+
+let currentfontSize = parseInt(window.getComputedStyle(nobutton).fontSize);
+
+yesbutton.style.width = (yesbutton.offsetWidth + 20) + "px";
+
+yesbutton.style.height = (yesbutton.offsetHeight + 20) + "px";
+
+
+nobutton.style.width = (nobutton.offsetWidth - 20) + "px";
+
+nobutton.style.height = (nobutton.offsetHeight - 20) + "px";
+
+nobutton.style.fontSize = (currentfontSize * 0.8) + "px";
+
+
+
+}
+      </script>
+
+
+
+</body>
+</html>
